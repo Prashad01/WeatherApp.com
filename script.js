@@ -17,7 +17,7 @@ let searchEl = document.querySelector(".search button");
 let weatherEl = document.querySelector(".weather");
 
 let weather = {
- "apikey": "a6f6fef1470f473cb0694459230605",
+ "apikey": "6813a504028af6c90e8692005a5c1f6d",
 
  fetchWeather: function (city) {
   fetch("http://api.weatherapi.com/v1/current.json?key=a6f6fef1470f473cb0694459230605%20&q=" + city + "&aqi=no").then((response) => response.json()).then((data) => this.displayWeather(data));
